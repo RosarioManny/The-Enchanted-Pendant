@@ -11,8 +11,15 @@ body {
     font-size: 2rem;
 }
 
-.items-1 {
-    color: aquamarine;
+li {
+    padding: 1rem;
+    background-color: aqua;
+}
+
+.choice 1 {
+    background-color: palevioletred;
+    border: 5px solid;
+    font-size: 5rem;
 }
 ul {
     list-style: none;
