@@ -55,11 +55,9 @@ p {
     display: flex;
     justify-content: center;
     object-fit: contain;
-    container: sidebar / inline-size;
-    
-    
-    /* align-content: center; */
  } 
+
+/* @media(min-width: ) */
 
 img {
     height: 12rem;

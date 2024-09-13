@@ -1,0 +1,21 @@
+body {
+    background-color:  navajowhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#scene { 
+    display: flex;
+    object-fit: contain;
+    font-size: 2rem;
+}
+
+.items-1 {
+    color: aquamarine;
+}
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
