@@ -1,47 +1,69 @@
 body {
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
+    min-height: 100vh;
+    background-image: linear-gradient(45deg, rgba(6,0,113,.1) 0%, rgba(23,23,255,.2) 20%, rgba(96,228,255,.4) 50%), url("https://media.istockphoto.com/id/1095330908/vector/city-street-map.jpg?s=1024x1024&w=is&k=20&c=tkZ0TqJrCDpuM2y6xIa7QQ-416Uu7VbFhoIfyyq7GBE="); 
     display: flex;
     flex-flow: column wrap;
     justify-content: space-evenly;
 } 
 h1 {
     background-color: yellow;
-    margin: 2rem;
+    margin: .5rem;
     border: .2rem solid black;
-    padding: 5rem,;
+    border-radius: 1rem;
+    padding: 1.3rem;
+    font-size: 3rem;
     display: flex;
     justify-content: center;
 }
 
 h2 {
     background-color: cornflowerblue;
-    border: .09rem solid rgba(100,0,200, 0.3);
-    border-radius: 1rem;
+    border: .2rem solid rgba(100,0,200, 0.3);
+    border-radius: 10rem;
+    padding: 1.6rem;
+    margin: .5rem;
+    font-size: 1.7rem;
     display: flex;
     justify-content: center;
 }
 
-div {
-    display: flex;
+#players {
+    display: inline-flex;
     justify-content: space-evenly;
-    font-size: 5em;
+    gap: .2rem;
+    font-size: small;
+    
 }
 p {
     display: flex;
     flex-direction: row;
+    
 }
 
-#male {
+#femaleC {
+    background-color: palevioletred;
+    border: 5px solid;
+    font-size: 5rem;
+} 
+#maleC {
     background-color: cornflowerblue;
     border: 5px solid;
-    font-size: 10rem;
- } 
-img {
-    height: 10rem;
-    width: 9em;
-    /* object-fit: contain; */
+    font-size: 5rem;
+} 
+#logo {
     display: flex;
-    align-content: center;
-
-
+    justify-content: center;
+    object-fit: contain;
+    container: sidebar / inline-size;
+    
+    
+    /* align-content: center; */
  } 
+
+img {
+    height: 12rem;
+    width: 23rem;
+    border: .2rem solid black;
+    border-radius: 1rem;
+ }
