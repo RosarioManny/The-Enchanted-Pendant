@@ -1,0 +1,47 @@
+body {
+    background-color: whitesmoke;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+} 
+h1 {
+    background-color: yellow;
+    margin: 2rem;
+    border: .2rem solid black;
+    padding: 5rem,;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    background-color: cornflowerblue;
+    border: .09rem solid rgba(100,0,200, 0.3);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 5em;
+}
+p {
+    display: flex;
+    flex-direction: row;
+}
+
+#male {
+    background-color: cornflowerblue;
+    border: 5px solid;
+    font-size: 10rem;
+ } 
+img {
+    height: 10rem;
+    width: 9em;
+    /* object-fit: contain; */
+    display: flex;
+    align-content: center;
+
+
+ } 
