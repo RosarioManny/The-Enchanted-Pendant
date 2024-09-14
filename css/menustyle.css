@@ -1,23 +1,28 @@
 body {
     /* background-color: whitesmoke; */
     min-height: 100vh;
-    background-image: linear-gradient(45deg, rgba(6,0,113,.1) 0%, rgba(23,23,255,.2) 20%, rgba(96,228,255,.4) 50%), url("https://media.istockphoto.com/id/1095330908/vector/city-street-map.jpg?s=1024x1024&w=is&k=20&c=tkZ0TqJrCDpuM2y6xIa7QQ-416Uu7VbFhoIfyyq7GBE="); 
+    background-image: linear-gradient(0deg, rgba(70,70,70,.5) 5%, rgba(208,208,208,.5) 35%, rgba(255,255,255,.5) 100%), url("https://m.media-amazon.com/images/I/91bPSo8rumL._AC_UL400_.jpg"); 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-evenly;
 } 
-h1 {
+#gametitles {
     background-color: yellow;
     margin: .5rem;
     border: .2rem solid black;
     border-radius: 1rem;
     padding: 1.3rem;
-    font-size: 3rem;
+    text-indent:;
+    font-size: 1rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-content: center;
 }
 
-h2 {
+#select {
     background-color: cornflowerblue;
     border: .2rem solid rgba(100,0,200, 0.3);
     border-radius: 10rem;
