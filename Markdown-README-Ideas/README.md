@@ -28,6 +28,33 @@
 
 ### PsuedoCode
 
+**MENU**
+This will be mostly CSS and HTML
+
+- A clear obvious start button.
+- Menu should be visually appealing.
+- Name of the game.
+
+**MAPS**
+
+**Text**
+
+- Clear and visible
+
+**Buttons**
+
+- Choices should be easy to understand.
+- Buttons choice are objects that should be pushed into Inventory.
+- Choices should be logged.
+
+**Inventory**
+
+- Should visually open up.
+- Should list the items in a column.
+- Inventory should push the choices into an array.
+- This new array should display and carry-over through the maps.
+- This inventory will determine the ending the player recieves.
+
 ## Stretch Goals
 
 - Game can have multiple characters to choose from.

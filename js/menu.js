@@ -1,8 +1,5 @@
-const playerCharacter = document.getElementById("maleC");
+const startGame = document.querySelector("#startbutton");
 
-
-const handleClick = () => {
-    console.log("hello")
+function startGame() {
+    console.log("clicked")
 }
-
-playerCharacter.addEventListener("click", handleClick);
