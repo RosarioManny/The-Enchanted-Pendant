@@ -13,6 +13,8 @@ let init = () => {
 }
 init()
 
+// vvvvvv Changing Scene Code vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
 // vvvvvv Player Choice Code vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 
 playerPicks.forEach((pick) => {
