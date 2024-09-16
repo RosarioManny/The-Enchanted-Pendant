@@ -6,7 +6,7 @@ body {
         justify-content: center;
 }
 #scene { 
-    display: flex;
+    display: inline-flex;
     flex-flow: wrap;
     justify-content: center;
         margin: auto 0;
@@ -18,21 +18,31 @@ body {
     margin: .15rem
 }
 
-@media (min-width: 800px) 
-{ #scene1 {
-    height: 15rem;
-    width: 24.7rem;
-    object-fit: fill;
-    margin: .15rem
-}
+@media (min-width: 600px) {
+    #scene {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+    }
+    #scene1, 
+    #inventroy{
+        height: 20rem;
+        width: 30rem;
+        object-fit: fill;
+        margin: .15rem
+    }
 
-#inventory {
-    width: 24.7rem; 
-    display: flex;
-    justify-content: center;
-    object-fit: fill;
-    margin: .15rem
-}
+    #items {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+    }
+
+    p {
+        height: 500px;
+        border: 2px solid red;
+        color: red
+    }
     
 }
 
@@ -43,8 +53,6 @@ body {
     padding: 0 7.8rem 0 7.8rem;
     border-radius: .4rem;
     box-shadow: 0 .4rem .259em rgba(0,0,0,.5);
-        display: flex;
-        justify-content: center;
 }
 
 .choice {
@@ -68,7 +76,6 @@ body {
 }
 
 #items {
-    /* background-color: blueviolet; */
     margin: 1.2rem 0;
     display: inline-flex;
     flex-direction: nowrap;
@@ -87,6 +94,6 @@ p {
     background-color: rgba(0, 0, 0, 0.3);
     margin: .7rem;
     padding: .8rem;
-    border: .2rem solid white;
+    border: .2rem solid ;
     border-radius: 1rem;
 }
