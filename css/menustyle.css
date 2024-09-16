@@ -1,72 +1,108 @@
 body {
     /* background-color: whitesmoke; */
     min-height: 100vh;
-    background-image: linear-gradient(0deg, rgba(70,70,70,.5) 5%, rgba(208,208,208,.5) 35%, rgba(255,255,255,.5) 100%), url("https://m.media-amazon.com/images/I/91bPSo8rumL._AC_UL400_.jpg"); 
+    background-image: linear-gradient(0deg, rgba(0,0,0,.6) 0%, rgba(255,255,255,.4) 40%, rgba(249,198,209,.4) 60%, rgba(226,0,46,.4) 100%), url("https://m.media-amazon.com/images/I/91bPSo8rumL._AC_UL400_.jpg"); 
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-evenly;
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
 } 
+
 #gametitles {
     background-color: rgba(255,255,255, .8);
     margin: .5rem;
-    border: .2rem solid linear-gradient;
+    border: .2rem solid rgba(0,120,255,1);
     border-radius: 1rem;
-    text-align: center;
-    padding: 1.3rem;
-    font-size: 1rem; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    content: .2rem;
+    padding: .1rem;
+     text-align: center;
+     font-family: "Bebas Neue", sans-serif;
+     font-weight: 400;
+     font-style: normal;
+     /* font-size: 1.3rem;  */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
 }
 
-#select {
-    background-color: cornflowerblue;
-    border: .2rem solid rgba(100,0,200, 0.3);
-    border-radius: 10rem;
-    padding: 1.6rem;
-    margin: .5rem;
-    font-size: 1.7rem;
-    display: flex;
-    justify-content: center;
+#gamename {
+    padding: 0rem;
+    margin: 1rem;
+        color: rgba(69,0,133,1);
+        font-size: 4rem
 }
 
-#players {
+#subtitle {
+    margin: .1rem;
+    padding: .3rem;
+        font-size: 1.7rem;
+        color: rgba(138,0,41,1); /* rgba(69,0,254,1); */
+}
+
+#start {
     display: inline-flex;
     justify-content: space-evenly;
     gap: .2rem;
     font-size: small;
-    
-}
-p {
-    display: flex;
-    flex-direction: row;
+   
     
 }
 
-#femaleC {
-    background-color: palevioletred;
-    border: 5px solid;
-    font-size: 5rem;
+#startbutton {
+    background: linear-gradient(0deg, rgba(78,0,163,1) 0%, rgba(0,108,255,1) 45%);
+    border: 4px solid azure;
+    margin: 1rem;
+    padding: 1.3rem;
+    border-radius: 20%;
+        font-size: 3rem;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: aliceblue;
+        box-shadow: 0px 10px 0px rgba(64, 93,167,1);
 } 
-#maleC {
-    background-color: cornflowerblue;
-    border: 5px solid;
-    font-size: 5rem;
-} 
+
 #logo {
     display: flex;
     justify-content: center;
     object-fit: contain;
- } 
+    
+} 
 
-/* @media(min-width: ) */
+@media (min-width: 600px){
+    #logo,
+    #start {
+        display: flex;
+        margin: 2.5rem;
+    }
+    #gametitles {
+        width: 25rem;
+        height: 16rem;
+    }
+    #gamename {
+        font-size: 4.7rem;
+    }
+    #subtitle {
+        font-size: 1.5rem;
+    }
+}
+
+#startbutton:active {
+    background: rgba(41,159,246,1);
+    -webkit-box-shadow: 0px 2px 0px rgba(64, 93,167,1);
+       -moz-box-shadow: 0px 2px 0px rgba(64, 93,167,1);
+            box-shadow: 0px 4px 0px rgba(64, 93,167,1);
+     outline: none;
+     position: relative;
+     top: 7px;
+}
 
 img {
-    height: 12rem;
-    width: 23rem;
-    border: .2rem solid black;
+
+    height: 15rem;
+    width: 20rem;
+    border: .2rem solid red;
     border-radius: 1rem;
- }
+}
