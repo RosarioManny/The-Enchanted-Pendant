@@ -1,19 +1,22 @@
-body {
+html, body{
     height: 100%;
     width: 100%;
+}
+body {
+    margin: 0 auto;
     background: linear-gradient(180deg, rgba(255,255,255,.3) 0%, rgba(0,0,0,.5) 100%), url("/css/menu-images/grunge-paper-background.jpg");
-    background-size: fill;
+    background-size: cover;
     background-repeat: repeat;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
 }
 /* vvv Scene Image CSS vvv */
 #scene { 
     display: inline-flex;
     flex-flow: wrap;
     justify-content: center;
-        margin: auto 0;
+        margin: 0 auto;
 }
 #scene1 {
     height: 13rem;
@@ -72,48 +75,11 @@ background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
     cursor: pointer;
   }
 
-@media (min-width: 600px) {
-    #scene {
-        display: flex;
-        flex-flow: column wrap;
-        align-content: center;
-    }
-    #scene1 {
-        height: 20rem;
-        width: 50%;
-        justify-content: center;
-        object-fit: fill;
-        margin: .15rem;
-    }
-
-    #items {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: flex-end;
-    }
-
-    p {
-        height: 500px;
-        border: 2px solid red;
-        color: red;
-    }
-
-    li {
-        font-size: 2.5rem;
-        margin: 2rem;
-        border: 2px solid rgba(220, 220, 220, .5);
-        border-radius: 1rem;
-        padding: 10px;
-        display: flex;
-        /* flex-flow: row wrap; */
-    }
-    
-}
-
 #inventory {
         font-size: 1.5rem;
     background: linear-gradient(45deg, rgba(139,139,139,1) 0%, rgba(236,235,235,1) 30%, rgba(248,251,255,1) 65%, rgba(165,198,255,1) 100%);
     padding: 0 7.8rem 0 7.8rem;
+    border: 2px solid rgba(0,0,40,.7);
     border-radius: .4rem;
     box-shadow: 0 .4rem .259em rgba(0,0,0,.5);
 }
@@ -155,9 +121,10 @@ a {
 .choice:hover {
     box-shadow: -4px 6px 11px whitesmoke, 5px -7px 11px rgba(255,191, 3,1); 
 }
+
 #inventory:hover {
-    border: 
-    box-shadow: -5px 3px 8px rgba(23, 147, 255, .3), 4px 3px 8px rgba(181, 220, 255, .3); 
+    border: 1.5px solid rgba(255,255,205,.8);
+    box-shadow: -5px 3px 8px rgba(23, 147, 255, .5), 4px 3px 8px rgba(181, 220, 255, .5); 
 }
 
 #Storycontent {
@@ -183,6 +150,7 @@ ul {
     align-content: space-evenly;
     gap: 1.4rem;
 }
+
 li {
     font-size: 2.5rem;
     margin-right: 1rem;
@@ -193,4 +161,43 @@ li {
     /* display: flex;
     align-content: space-between;
     gap: 1rem; */
+}
+
+/* vvvv Media vvv */
+@media (min-width: 600px) {
+    #scene {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+    }
+    #scene1 {
+        height: 20rem;
+        width: 50%;
+        justify-content: center;
+        object-fit: fill;
+        margin: .15rem;
+    }
+
+    #items {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+    }
+
+    p {
+        height: 500px;
+        border: 2px solid red;
+        color: red;
+    }
+
+    li {
+        font-size: 2.5rem;
+        margin: 2rem;
+        border: 2px solid rgba(220, 220, 220, .5);
+        border-radius: 1rem;
+        padding: 10px;
+        display: flex;
+        /* flex-flow: row wrap; */
+    }
+    
 }

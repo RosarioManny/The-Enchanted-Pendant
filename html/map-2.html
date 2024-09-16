@@ -4,18 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Map-1</title>
-    <link rel="stylesheet" href="/css/map-2.css">
-    <script src="/js/map-2.js" defer></script>
+    <link rel="stylesheet" href="/css/Main-map.css">
+    <script src="/js/Main-map.js" defer></script>
+
 </head>
 <body>
     <div id="scene">
         <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTMza24xMmg0Ymo4OXVhMzZueWMwZTNjaTYwbGtreHIzaXN3NXdoMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Fu3OjBQiCs3s0ZuLY3/giphy.webp">
+        <button id="inventory">Inventory</button>
     </div>
-    <button id="inventory">Inventory</button>
+        <div id="inventoryModal" class="modal">
+            <div class="modalContent">
+                <span class="close">&times;</span>
+                <ul id="mdlText"></ul>
+            </div>
+        </div>
     <div id="items">
-        <button class="choice first">Banana</button>
-        <button class="choice second">Apple</button>
-        <button class="choice third">Melon</button>
+        <a href="./map-3.html">
+            <button class="choice good">Coconut</button>
+            <button class="choice nuetral">Grape</button>
+             <button class="choice bad">Orange</button>
+           </a>
     </div>
     <div id="Storycontent">
         <p> 
