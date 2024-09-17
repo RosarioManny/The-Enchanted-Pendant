@@ -1,5 +1,5 @@
 const playerPicks = document.querySelectorAll(".choice")
-const imageChg = document.querySelector("#scene1")
+const imageChg = document.querySelector("img")
 
 let inventory;
 let gameScore;
@@ -24,12 +24,16 @@ let gameScore;
 const endResult = () => {
     if (parseInt(localStorage.getItem("gameScore")) <= 4) {
         document.querySelector("#result").innerHTML = "Good ending"
+        imageChg.src = "https://www.mtgpics.com/pics/art/chk/286.jpg"
+
 
     } else if (parseInt(localStorage.getItem("gameScore")) > 4 && parseInt(localStorage.getItem("gameScore")) <= 7) {
         document.querySelector("#result").innerHTML = "Silly Ending"
+        imageChg.src = "https://www.mtgpics.com/pics/art/lci/269.jpg"
 
     } else if(parseInt(localStorage.getItem("gameScore")) > 7) {
         document.querySelector("#result").innerHTML = "Bad Ending"
+        imageChg.src = "https://www.mtgpics.com/pics/art/lci/269.jpg"
     }
 }
 
