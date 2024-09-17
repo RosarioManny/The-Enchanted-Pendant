@@ -20,6 +20,7 @@ body {
      font-family: "Bebas Neue", sans-serif;
      font-weight: 400;
      font-style: normal;
+
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -99,7 +100,6 @@ body {
 }
 
 img {
-
     height: 15rem;
     width: 20rem;
     border: .2rem solid red;
