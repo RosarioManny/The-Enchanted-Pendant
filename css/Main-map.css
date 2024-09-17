@@ -184,11 +184,11 @@ li {
         justify-content: flex-end;
     }
 
-    p {
+    /* p {
         height: 500px;
         border: 2px solid red;
         color: red;
-    }
+    } */
 
     li {
         font-size: 2.5rem;

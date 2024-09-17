@@ -1,8 +1,8 @@
 const playerPicks = document.querySelectorAll(".choice")
 
-let inventory = [];
+let inventory;
 // let playerChoices = [];
-let gameScore = 0;
+let gameScore;
 
 // vvvvvv Restart Code vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 
@@ -11,38 +11,40 @@ let init = () => {
     // playerChoices = []; // I think I don't need this variable because Inventory is basically the player's choices.
     gameScore = 0;   
 }
-init()
 
-// vvvvvv Changing Scene Code vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+init()
 
 // vvvvvv Player Choice Code vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 
 playerPicks.forEach((pick) => {
     pick.addEventListener("click", () => {
-        console.log(pick.classList)
+        // console.log(pick.classList)
      if (pick.classList[0] == "choice") {
-        document.getElementById("mdlText").innerHTML += (`<li>${pick.textContent}</li>`) 
+        // document.getElementById("mdlText").innerHTML += (`<li>${pick.textContent}</li>`) 
+        inventory.push(pick.textContent) // adding pick to inventory array
+
         if (pick.classList[1] == "good") {
             gameScore++
-            console.log(gameScore)
+            // console.log(gameScore)
         } else if (pick.classList[1] == "nuetral") {
             gameScore += 2
-            console.log(gameScore)
+            // console.log(gameScore)
         } else if (pick.classList[1] == "bad") {
             gameScore += 3
-            console.log(gameScore)
+            // console.log(gameScore)
         }
-        // *SCRAPPED* document.getElementById("mdlText").append(pick.textContent)
+        
+        localStorage.setItem("inventory", JSON.stringify(inventory));
+        localStorage.setItem("gameScore", gameScore)
      } 
+     
+     window.location.href = "./map-2.html"
+    
     })
 });
 
-const nextScene = () => {
-
-}
-
 // vvvvvv Inventory Code vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-// The items that are put within the player's inventory
+// The choices that are put within the player's inventory
 
 // vvvvvv Game Ending Code vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 // Game ending will be decided by a value given to each choice. 
