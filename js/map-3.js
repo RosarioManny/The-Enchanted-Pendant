@@ -42,7 +42,7 @@ playerPicks.forEach((pick) => {
         localStorage.setItem("gameScore", gameScore)
      } 
      
-     window.location.href = "./map-final.html"
+     window.location.href = "../html/map-final.html"
     })
 });
 
@@ -54,6 +54,7 @@ playerPicks.forEach((pick) => {
 // If value <= 4 = Good Ending; If value > 4 && < 7 = Nuetral Ending; If value > 8 = Bad Ending;
 
 // vvvvvv Inventory Modal Code vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
 const modal = document.querySelector("#inventoryModal");
 const openInventory = document.querySelector("#inventory");
 const closeModal = document.querySelector(".close");

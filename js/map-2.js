@@ -42,7 +42,7 @@ playerPicks.forEach((pick) => {
         localStorage.setItem("gameScore", gameScore)
      } 
      
-     window.location.href = "./map-3.html"
+     window.location.href = "../html/map-3.html"
     })
 });
 

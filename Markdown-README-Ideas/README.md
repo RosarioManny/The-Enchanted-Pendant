@@ -9,7 +9,7 @@
 ## MVP
 
 - Game must render in the browser
-- Must have a win and lose logic.
+- Must have a good(win) and bad(lose) ending
 - Must include **HTML, CS, & JS**.
   - Game must have a main menu
     - A way to start the game. Start button or Select character from screen.
@@ -62,3 +62,4 @@ This will be mostly CSS and HTML
 - Combat system
 - Additional endings
 - More story
+- Music / Audio
