@@ -60,7 +60,7 @@ background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
     width: 90%;
 }
 .close { /* X Icon */
-    margin-right: -115%;
+    /* margin-right: -110%; */
     margin-top: -12%;
     color: aliceblue;
     float: right;
@@ -158,46 +158,36 @@ li {
     border: 2px solid rgba(220, 220, 220, .2);
     border-radius: 1rem;
     padding: 10px;
-    /* display: flex;
-    align-content: space-between;
-    gap: 1rem; */
 }
 
 /* vvvv Media vvv */
 @media (min-width: 600px) {
     #scene {
         display: flex;
-        flex-flow: column wrap;
+        flex-direction: column;
         align-content: center;
     }
+
     #scene1 {
         height: 20rem;
-        width: 50%;
-        justify-content: center;
-        object-fit: fill;
-        margin: .15rem;
+        width: 125%;
+        border: .2rem solid white ;
+        margin: auto 0;;
     }
 
     #items {
         display: flex;
-        flex-flow: row wrap;
-        justify-content: flex-end;
+        gap: 8rem;
+        margin: 1rem auto
     }
 
-    /* p {
-        height: 500px;
-        border: 2px solid red;
-        color: red;
-    } */
-
     li {
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin: 2rem;
         border: 2px solid rgba(220, 220, 220, .5);
         border-radius: 1rem;
         padding: 10px;
         display: flex;
-        /* flex-flow: row wrap; */
+        flex-flow: row wrap; 
     }
-    
 }

@@ -23,7 +23,7 @@
 - Player should be able pick-up items **(JS: Objects)**.
 - They should should have an inventory. **(JS: Array)**
   - Should have an icon/button to click.
-  - What items they have collected
+  - What items/choices they have collected
   - Items will determine the ending the player gets.
 
 ### PsuedoCode
@@ -62,4 +62,5 @@ This will be mostly CSS and HTML
 - Combat system
 - Additional endings
 - More story
+  - Players will be given a description of their choice.
 - Music / Audio

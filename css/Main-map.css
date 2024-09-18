@@ -13,7 +13,7 @@ body {
 }
 /* vvv Scene Image CSS vvv */
 #scene { 
-    display: inline-flex;
+    display: flex;
     flex-flow: wrap;
     justify-content: center;
     margin: 5px auto;
@@ -79,7 +79,8 @@ body {
 #inventory {
     font-size: 1.5rem;
     background: linear-gradient(45deg, rgba(139,139,139,1) 0%, rgba(236,235,235,1) 30%, rgba(248,251,255,1) 65%, rgba(165,198,255,1) 100%);
-    padding: 0 7.8rem 0 7.8rem;
+    margin: .2rem;
+    padding: 0 45% 0 45%;
     border: 2px solid rgba(0,0,40,.7);
     border-radius: .4rem;
     box-shadow: 0 .4rem .259em rgba(0,0,0,.5);
@@ -148,6 +149,7 @@ body {
     margin: .5rem 0;
     text-align: center;
 }
+
 ul {
     list-style: none;
     display: flex;
@@ -170,30 +172,27 @@ li {
 
 
 /* vvvv Media vvv */
-/* @media (min-width: 600px) {
+@media (min-width: 600px) {
     #scene {
         display: flex;
-        flex-flow: column wrap;
+        /* flex-direction: column; */
         align-content: center;
+        width: 90%;
+        height: 20rem;
+        margin: auto;
     }
+
     #scene1 {
         height: 20rem;
-        width: 50%;
-        justify-content: center;
-        object-fit: fill;
-        margin: .15rem;
+        width: 125%;
+        border: .2rem solid white ;
+        margin: auto 0;;
     }
 
     #items {
         display: flex;
-        flex-flow: row wrap;
-        justify-content: flex-end;
-    }
-
-    p {
-        height: 500px;
-        border: 2px solid red;
-        color: red;
+        gap: 8rem;
+        margin: 1rem auto
     }
 
     li {
@@ -205,5 +204,4 @@ li {
         display: flex;
         flex-flow: row wrap; 
     }
-    
-}*/
+}

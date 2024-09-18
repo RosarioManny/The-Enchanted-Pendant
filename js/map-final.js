@@ -1,6 +1,7 @@
-const playerPicks = document.querySelectorAll(".choice")
 const imageChg = document.querySelector("img")
 const gameEnd = document.querySelector("#result")
+const newStory = document.querySelector("#story")
+const firstLine = document.querySelector("span")
 
 let inventory;
 let gameScore;
@@ -24,9 +25,10 @@ let gameScore;
 
 const endResult = () => {
     if (parseInt(localStorage.getItem("gameScore")) <= 4) {
-        gameEnd.innerHTML = "Good ending"
+        gameEnd.innerHTML = "The Good Ending"
         imageChg.src = "https://www.mtgpics.com/pics/art/chk/286.jpg"
-
+        firstLine.innerHTML = "You are the goodest"
+        newStory.innerHTML = "You have won the game. !!!!@E!@ADA"
 
     } else if (parseInt(localStorage.getItem("gameScore")) > 4 && parseInt(localStorage.getItem("gameScore")) <= 7) {
         gameEnd.innerHTML = "Silly Ending"
