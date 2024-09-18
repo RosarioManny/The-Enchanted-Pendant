@@ -41,21 +41,23 @@ playerPicks.forEach((pick) => {
         localStorage.setItem("gameScore", gameScore)
      } 
      
-    window.location.href = "../html/map-final.html"
-    // handlePath()
+    handlePath()
     })
 });
 
-// vv Handles path for MAP 4 vv
+/// vv Handles path for MAP 4 vv
 const handlePath = playerPicks.forEach((pick) => {
     pick.addEventListener("click", () => {
-            if (pick.classList[1] == "good" || pick.classList[1] == "nuetral")
-                window.location.href = "./map-5.html"
-    
-            else if (pick.classList[1] == "bad") {
-                window.location.href = "./map-6.html"
-            }
-    }) 
+        if (pick.classList[0] == "choice") { 
+
+            if (parseInt(localStorage.getItem("gameScore")) <= 5) {
+            window.location.href = "./map-final-G.html"
+
+        } else if (parseInt(localStorage.getItem("gameScore")) > 5) {
+            window.location.href = "./map-final-N.html"
+        }
+        }
+    })
 })
 // vvvvvv Inventory Modal Code vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 

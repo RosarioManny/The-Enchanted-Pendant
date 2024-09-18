@@ -5,41 +5,59 @@ html, body{
 body {
     margin: 0 auto;
     background: linear-gradient(180deg, rgba(255,255,255,.3) 0%, rgba(0,0,0,.5) 100%), url("/css/Assets/grunge-paper-background.jpg");
-    background-size: cover;
+    background-size: 100%;
     background-repeat: repeat;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
     align-content: center;
-}
+} 
 
+#scene {
+    margin: 0 auto;
+}
 #scene1 {
     border: .1rem solid white ;
     border-radius: .4rem;
     height: 16rem;
     width: 100%;
     object-fit: fill;
-    margin: 0 auto;
+    margin: 0 .3rem;
 }
 
 #gameResult {
     display: flex;
 }
 
-#result {
+.result {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: bold;
     font-size: 4rem;
-    color: white;
+    /* color: white; */
     margin: 0 auto;
-    text-shadow: 0 0 1rem cornflowerblue;
+    /* text-shadow: 0 0 1rem cornflowerblue; */
 }
 
+.bad {
+    color: black;
+    text-shadow: 0 0 .7rem red;
+}
+
+.nuetral {
+    color: black;
+    text-shadow: 0 0 .7rem green;
+}
+
+.good {
+    color: black;
+    text-shadow: 0 0 .7rem blue;
+}
+
+
 #Storycontent {
-    height: 15rem;
-    width: 85%;
+    height: auto;
+    width: 87%;
     color: white;
     background-color: rgba(0, 0, 0, 0.3);
     margin: 0 auto;
@@ -62,14 +80,13 @@ body {
 /* vvvv Media vvv */
  @media (min-width: 600px) {
     #scene {
-
         display: flex;
         flex-flow: column wrap;
         align-content: center;
     }
     #scene1 {
         height: 20rem;
-        width: 90%;
+        width: 110%;
         justify-content: center;
         object-fit: fill;
         margin: .15rem;
