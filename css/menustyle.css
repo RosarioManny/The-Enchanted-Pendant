@@ -1,12 +1,14 @@
 body {
     /* background-color: whitesmoke; */
     min-height: 100vh;
-    background-image: linear-gradient(0deg, rgba(0,0,0,.6) 0%, rgba(255,255,255,.4) 40%, rgba(249,198,209,.4) 60%, rgba(226,0,46,.4) 100%), url("https://media1.tenor.com/m/EVEynF-p5fcAAAAC/marauders-map-harry-potter.gif"); 
+    background-image: linear-gradient(0deg, rgba(0,0,0,.6) 0%, rgba(255,255,255,.4) 40%, rgba(249,198,209,.4) 60%, rgba(255,0,46,.3) 100%), url("https://media1.tenor.com/m/EVEynF-p5fcAAAAC/marauders-map-harry-potter.gif"); 
     background-repeat: no-repeat;
     background-size: 100% 100%;
         display: flex;
         flex-flow: column wrap;
-        align-content: center;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem
 } 
 
 #gametitles {
@@ -20,7 +22,7 @@ body {
      font-family: "Bebas Neue", sans-serif;
      font-weight: 400;
      font-style: normal;
-
+     box-shadow: 0 0 2rem indigo;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -28,17 +30,17 @@ body {
 }
 
 #gamename {
-    padding: 0rem;
     margin: 1rem;
         color: rgba(69,0,133,1);
-        font-size: 4rem
+        font-size: 4rem;
+        text-shadow: 0 0 4px red
 }
 
 #subtitle {
     margin: .1rem;
     padding: .3rem;
-        font-size: 1.7rem;
-        color: rgba(138,0,41,1); /* rgba(69,0,254,1); */
+        font-size: 1.3rem;
+        color: rgba(138,0,41,.5);
 }
 
 #start {
@@ -75,19 +77,34 @@ body {
     #logo,
     #start {
         display: flex;
-        margin: 2.5rem;
+    }
+    body {
+        display: flex;
+        gap: 4rem
     }
     #gametitles {
-        width: 25rem;
+        width: auto;
         height: 16rem;
     }
     #gamename {
         font-size: 4.7rem;
+        margin: .4rem;
     }
     #subtitle {
+        display: flex;
+        justify-content: center;
         font-size: 1.5rem;
     }
+    #startbutton:hover {
+        box-shadow: 0 10px 0 rgba(64, 64,167,1), 0 0 2rem red;
+    }
+    /* img {
+        border: 1rem black;
+        border-radius: 50%;
+    } */
 }
+
+
 
 #startbutton:active {
     background: rgba(41,159,246,1);
@@ -101,7 +118,9 @@ body {
 
 img {
     height: 15rem;
-    width: 20rem;
-    border: .2rem solid red;
-    border-radius: 1rem;
+    width: 100%;
+    /* border: .2rem solid; */
+    border-radius: 46%;
+    margin: .5rem auto;
+    box-shadow: 0 1rem 1.5rem black;
 }
