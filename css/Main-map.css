@@ -4,7 +4,7 @@ html, body{
 }
 body {
     margin: 0 auto;
-    background: linear-gradient(180deg, rgba(255,255,255,.3) 0%, rgba(0,0,0,.5) 100%), url("/css/menu-images/grunge-paper-background.jpg");
+    background: linear-gradient(180deg, rgba(255,255,255,.3) 0%, rgba(0,0,0,.5) 100%), url("/css/Assets/grunge-paper-background.jpg");
     background-size: cover;
     background-repeat: repeat;
     display: flex;
@@ -79,11 +79,11 @@ body {
 #inventory {
     font-size: 1.5rem;
     background: linear-gradient(45deg, rgba(139,139,139,1) 0%, rgba(236,235,235,1) 30%, rgba(248,251,255,1) 65%, rgba(165,198,255,1) 100%);
-    margin: .2rem;
-    padding: 0 45% 0 45%;
+    margin: .4rem;
     border: 2px solid rgba(0,0,40,.7);
     border-radius: .4rem;
     box-shadow: 0 .4rem .259em rgba(0,0,0,.5);
+    width: 90%
 }
 
 #items {
@@ -185,7 +185,8 @@ li {
     #scene1 {
         height: 20rem;
         width: 125%;
-        border: .2rem solid white ;
+        border: .25rem solid rgba(229, 255, 255, .);
+        border-radius: .4rem;;
         margin: auto 0;;
     }
 
@@ -193,6 +194,10 @@ li {
         display: flex;
         gap: 8rem;
         margin: 1rem auto
+    }
+
+    #inventory {
+        padding: 0 40% 0 40%;
     }
 
     li {

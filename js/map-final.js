@@ -25,13 +25,13 @@ let gameScore;
 
 const endResult = () => {
     if (parseInt(localStorage.getItem("gameScore")) <= 4) {
-        gameEnd.innerHTML = "The Good Ending"
+        gameEnd.innerHTML = "Good Ending"
         imageChg.src = "https://www.mtgpics.com/pics/art/chk/286.jpg"
         firstLine.innerHTML = "You are the goodest"
         newStory.innerHTML = "You have won the game. !!!!@E!@ADA"
 
     } else if (parseInt(localStorage.getItem("gameScore")) > 4 && parseInt(localStorage.getItem("gameScore")) <= 7) {
-        gameEnd.innerHTML = "Silly Ending"
+        gameEnd.innerHTML = "Nuetral Ending"
         imageChg.src = "https://www.mtgpics.com/pics/art/pla/138.jpg"
 
     } else if(parseInt(localStorage.getItem("gameScore")) > 7) {

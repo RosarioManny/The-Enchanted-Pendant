@@ -11,6 +11,7 @@ let init = () => {
     inventory.forEach((item) => {
         document.getElementById("mdlText").innerHTML += (`<li>${item}</li>`) 
     })
+
     gameScore = parseInt(localStorage.getItem("gameScore"));
 }
 
@@ -22,6 +23,7 @@ init()
 playerPicks.forEach((pick) => {
     pick.addEventListener("click", () => {
      if (pick.classList[0] == "choice") {
+    
         inventory.push(pick.textContent) // adding pick to inventory array
 
         if (pick.classList[1] == "good") {
@@ -39,12 +41,12 @@ playerPicks.forEach((pick) => {
         localStorage.setItem("gameScore", gameScore)
      } 
      
-    //  window.location.href = "../html/map-3.html"
-    handlePath()
+    window.location.href = "../html/map-final.html"
+    // handlePath()
     })
 });
 
-// vv Handles path for MAP 3 vv
+// vv Handles path for MAP 4 vv
 const handlePath = playerPicks.forEach((pick) => {
     pick.addEventListener("click", () => {
             if (pick.classList[1] == "good" || pick.classList[1] == "nuetral")
@@ -55,7 +57,6 @@ const handlePath = playerPicks.forEach((pick) => {
             }
     }) 
 })
-
 // vvvvvv Inventory Modal Code vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 
 const modal = document.querySelector("#inventoryModal");

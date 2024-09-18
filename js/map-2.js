@@ -1,7 +1,6 @@
 const playerPicks = document.querySelectorAll(".choice")
 
 let inventory;
-// let playerChoices = [];
 let gameScore;
 
 // vvvvvv Restart Code vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
@@ -12,48 +11,55 @@ let init = () => {
     inventory.forEach((item) => {
         document.getElementById("mdlText").innerHTML += (`<li>${item}</li>`) 
     })
-
-    // playerChoices = []; // I think I don't need this variable because Inventory is basically the player's choices.
     gameScore = parseInt(localStorage.getItem("gameScore"));
 }
 
 init()
-// vvvvvv Player Choice Code vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+// vvvvvv Player Choice && Inventory Code vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+// Player makes a choice. Points go up. Choice is pushed into Inventory
 
 playerPicks.forEach((pick) => {
     pick.addEventListener("click", () => {
-        // console.log(pick.classList)
      if (pick.classList[0] == "choice") {
-        // document.getElementById("mdlText").innerHTML += (`<li>${pick.textContent}</li>`) 
         inventory.push(pick.textContent) // adding pick to inventory array
 
         if (pick.classList[1] == "good") {
             gameScore++
-            // console.log(gameScore)
+
         } else if (pick.classList[1] == "nuetral") {
             gameScore += 2
-            // console.log(gameScore)
+
         } else if (pick.classList[1] == "bad") {
             gameScore += 3
-            // console.log(gameScore)
+
         }
         
         localStorage.setItem("inventory", JSON.stringify(inventory));
         localStorage.setItem("gameScore", gameScore)
      } 
      
-     window.location.href = "../html/map-3.html"
+    //  window.location.href = "../html/map-3.html"
+    handlePath()
     })
 });
 
-// vvvvvv Inventory Code vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-// The choices that are put within the player's inventory
+// vv Handles path for MAP 2 vv
+const handlePath = playerPicks.forEach((pick) => {
+    pick.addEventListener("click", () => {
+            if (pick.classList[1] == "bad" || pick.classList[1] == "nuetral")
+                window.location.href = "./map-5.html"
+    
+            else if (pick.classList[1] == "good") {
+                window.location.href = "./map-4.html"
+            }
+    }) 
+})
 
-// vvvvvv Game Ending Code vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-// Game ending will be decided by a value given to each choice. 
-// If value <= 4 = Good Ending; If value > 4 && < 7 = Nuetral Ending; If value > 8 = Bad Ending;
+
 
 // vvvvvv Inventory Modal Code vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
 const modal = document.querySelector("#inventoryModal");
 const openInventory = document.querySelector("#inventory");
 const closeModal = document.querySelector(".close");

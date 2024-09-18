@@ -18,37 +18,43 @@ init()
 
 playerPicks.forEach((pick) => {
     pick.addEventListener("click", () => {
-        // console.log(pick.classList)
+        
      if (pick.classList[0] == "choice") {
         // document.getElementById("mdlText").innerHTML += (`<li>${pick.textContent}</li>`) 
         inventory.push(pick.textContent) // adding pick to inventory array
 
         if (pick.classList[1] == "good") {
             gameScore++
-            // console.log(gameScore)
+    
         } else if (pick.classList[1] == "nuetral") {
             gameScore += 2
-            // console.log(gameScore)
+            
         } else if (pick.classList[1] == "bad") {
             gameScore += 3
-            // console.log(gameScore)
+           
         }
-        
+    
         localStorage.setItem("inventory", JSON.stringify(inventory));
         localStorage.setItem("gameScore", gameScore)
      } 
-     
-     window.location.href = "./map-2.html"
     
+    window.location.href = "./map-2.html"
+    handlePath()
     })
 });
 
-// vvvvvv Inventory Code vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-// The choices that are put within the player's inventory
+// vv Handles path for MAP 1 vv
+const handlePath = playerPicks.forEach((pick) => {
+    pick.addEventListener("click", () => {
+            if (pick.classList[1] == "good" || pick.classList[1] == "nuetral")
+                window.location.href = "./map-2.html"
+    
+            else if (pick.classList[1] == "bad") {
+                window.location.href = "./map-3.html"
+            }
+    }) 
+})
 
-// vvvvvv Game Ending Code vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-// Game ending will be decided by a value given to each choice. 
-// If value <= 4 = Good Ending; If value > 4 && < 7 = Nuetral Ending; If value > 8 = Bad Ending;
 
 // vvvvvv Inventory Modal Code vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 const modal = document.querySelector("#inventoryModal");
