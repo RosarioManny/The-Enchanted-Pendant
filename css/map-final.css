@@ -4,7 +4,7 @@ html, body{
 }
 body {
     margin: 0 auto;
-    background: url("/css/Assets/grunge-paper-background.jpg");
+    background: url("./Assets/grunge-paper-background.jpg");
     background-size: 100%;
     background-repeat: repeat;
     display: flex;
