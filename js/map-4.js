@@ -51,10 +51,10 @@ const handlePath = playerPicks.forEach((pick) => {
         if (pick.classList[0] == "choice") { 
 
             if (parseInt(localStorage.getItem("gameScore")) <= 5) {
-            setTimeout(window.location.href = "../map-final-G.html", 1)
+            setTimeout(window.location.href = "./map-final-G.html", 1)
 
         } else if (parseInt(localStorage.getItem("gameScore")) > 5) {
-            setTimeout(window.location.href = "../map-final-N.html", 1)
+            setTimeout(window.location.href = "./map-final-N.html", 1)
         }
         }
     })
