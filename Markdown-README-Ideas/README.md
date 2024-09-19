@@ -1,10 +1,18 @@
-# Creating "Name of Game"
+# Creating "The Enchanted Pendant: Harry Potter Fangame"
 
 - **Genre**: Choose your own adventure
-- **Theme**: n/a
+- **Theme**: Harry Potter
 - **Requirements**:
   - Three Endings (**_if_** statements)
   - Art (**_images_**)
+
+## About the game
+
+The game is a simple storytelling game set in the universe of Harry Potter. You read the story and make decision based on what you would do.
+
+When making decisions you will have an "inventory" called Decisions. This will allow you to look back at what you did and make decisions based on that.
+
+The game has three endings. A good ending, bad ending and a neutral ending. While the game only has three chapters there are 27 ways you can get to an ending with only 3 ways leading you to the good.
 
 ## MVP
 
@@ -25,6 +33,23 @@
   - Should have an icon/button to click.
   - What items/choices they have collected
   - Items will determine the ending the player gets.
+
+## Stretch Goals
+
+- Game can have multiple characters to choose from.
+- More graphics and visuals
+- Combat system
+- Additional endings
+- More story
+  - Players will be given a description of their choice.
+- Music / Audio
+- Create a feature that randomizes the position of the choices
+
+### Accomplished SG
+
+I accomplished more graphics and visuals. Making the adventure more visual.
+
+I achieved giving my game a background track.
 
 ### PsuedoCode
 
@@ -54,17 +79,6 @@ This will be mostly CSS and HTML
 - Inventory should push the choices into an array.
 - This new array should display and carry-over through the maps.
 - This inventory will determine the ending the player recieves.
-
-## Stretch Goals
-
-- Game can have multiple characters to choose from.
-- More graphics and visuals
-- Combat system
-- Additional endings
-- More story
-  - Players will be given a description of their choice.
-- Music / Audio
-- Create a feature that randomizes the position of the choices
 
 ## Attributions
 

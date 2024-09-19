@@ -20,3 +20,11 @@ const retryButton = () => {
 }
 
 retryButton()
+
+const backgroundMusix = () => {
+    const audio = document.getElementById('bgmusic');
+    audio.volume = .1;
+    audio.play()
+}
+
+backgroundMusix()

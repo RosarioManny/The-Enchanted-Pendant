@@ -61,13 +61,6 @@ const backgroundMusix = () => {
 }
 backgroundMusix()
 
-playerPicks.forEach(pick => {
-    const sfxSounds = document.getElementById("sfx");
-    pick.addEventListener("click", (event) => {
-        sfxSounds.volume = 1;
-        sfxSounds.play()
-    })
-})
 
 
 // vvvvvv Inventory Modal Code vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
