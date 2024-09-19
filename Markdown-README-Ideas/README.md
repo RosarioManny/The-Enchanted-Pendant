@@ -64,3 +64,4 @@ This will be mostly CSS and HTML
 - More story
   - Players will be given a description of their choice.
 - Music / Audio
+- Create a feature that randomizes the position of the choices

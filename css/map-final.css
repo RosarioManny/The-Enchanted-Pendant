@@ -4,7 +4,7 @@ html, body{
 }
 body {
     margin: 0 auto;
-    background: linear-gradient(180deg, rgba(255,255,255,.3) 0%, rgba(0,0,0,.5) 100%), url("/css/Assets/grunge-paper-background.jpg");
+    background: url("/css/Assets/grunge-paper-background.jpg");
     background-size: 100%;
     background-repeat: repeat;
     display: flex;
@@ -27,8 +27,37 @@ body {
 
 #gameResult {
     display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+
+}
+.reset {
+    height: 30%;
+    padding: .4rem;
+    border-radius: 1rem;
+    margin:  auto 0;
+    /* min-width: 0; */
 }
 
+.unex {
+    background-color: rgba(39,92,80,.9);
+    color: rgba(93,247,110,1);
+    border: 1.5px solid rgba(43,162,35,1);
+}
+.hor {
+    background-color: crimson;
+    color: aliceblue;
+    border: 1.5px solid rgba(61,0,27,1);
+}
+.newlife{
+    background-color: rgba(35,0,247,.9);
+    color: rgba(110,238,255,1);
+    border: 1.5px solid azure;
+}
 .result {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
@@ -50,8 +79,8 @@ body {
 }
 
 .good {
-    color: black;
-    text-shadow: 0 0 .7rem blue;
+    color: azure;
+    text-shadow: 0 0 1rem rgba(0,112,255,1);
 }
 
 
@@ -59,7 +88,7 @@ body {
     height: auto;
     width: 87%;
     color: white;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.6);
     margin: 0 auto;
     padding: .5rem;
     border: .1rem solid ;
@@ -99,10 +128,43 @@ p {
     }
     #scene1 {
         height: 20rem;
-        width: 110%;
+        width: 120%;
         justify-content: center;
         object-fit: fill;
         margin: .15rem;
     }
-    
+    .result {
+        font-size: 6rem;
+        margin: 0 auto;
+    }
+    .first-line {
+        font-size: 1.4rem;
+    }
+    #story {
+        font-size: 1.1rem;
+    }
+    #Storycontent {
+        height: auto;
+        width: 87%;
+        font-size: 1.25rem;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.6);
+        margin: 0 auto;
+        padding: .5rem;
+    }
+    .reset {
+        font-size: 1rem;
+        height: 70%;
+        width: 10%;
+        text-align: center;
+        border-radius: 5rem;
+        margin: auto;
+        border: .2rem solid;
+    }
+    .reset:hover {
+        color: rgba(5, 5, 5, 1);
+        border: .3rem solid rgba(15, 15,15, .8);
+        background-color: rgba(240, 240, 240, 0.9);
+        box-shadow: 0 0 1.5rem indigo;
+    }
 }
