@@ -52,6 +52,10 @@ const handlePath = playerPicks.forEach((pick) => {
     })
 })
 
+window.addEventListener("load", (event) => {
+    console.log("Loaded the page")
+})
+
 // vvvvvv Inventory Modal Code vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 const modal = document.querySelector("#inventoryModal");
 const openInventory = document.querySelector("#inventory");
