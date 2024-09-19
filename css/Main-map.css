@@ -1,6 +1,6 @@
 html {
     display: flex;
-        background: url("./css/Assets/grunge-paper-background.jpg");
+        background: url("/css/Assets/grunge-paper-background.jpg");
         background-size: 100%;
 }
 body {

@@ -14,7 +14,7 @@ let init = () => {
 
 const retryButton = () => {
     restartButton.addEventListener('click', () => {
-        window.location.href = "../index.html";
+        window.location.href = "/index.html";
     })
     
 }
