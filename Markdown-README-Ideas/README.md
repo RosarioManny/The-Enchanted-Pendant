@@ -65,3 +65,19 @@ This will be mostly CSS and HTML
   - Players will be given a description of their choice.
 - Music / Audio
 - Create a feature that randomizes the position of the choices
+
+## Attributions
+
+### Property
+
+1. The Harry Potter series is based on the novels by J.K. Rowling.
+
+### Art
+
+1. https://www.mtgpics.com/index - Various Artist from the property of MTG
+
+### Music & Sounds
+
+1. Apply - Rpg by colorsCrimsonTears -- https://freesound.org/s/577961/ -- License: Creative Commons 0
+
+1. wizardly songs to cast spells to by Sensory Heaven https://www.youtube.com/watch?v=13bN5nXTxqw

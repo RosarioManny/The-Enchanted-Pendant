@@ -44,17 +44,31 @@ const handlePath = playerPicks.forEach((pick) => {
     pick.addEventListener("click", () => {
         if (pick.classList[0] == "choice") { 
             if (parseInt(localStorage.getItem("gameScore")) < 3) {
-            window.location.href = "./map-2.html"
+            setTimeout(window.location.href = "./map-2.html", 1)
         } else if (parseInt(localStorage.getItem("gameScore")) >= 3) {
-            window.location.href = "./map-3.html"
+            setTimeout(window.location.href = "./map-3.html", 1)
         }
         }
     })
 })
 
-window.addEventListener("load", (event) => {
-    console.log("Loaded the page")
+// vv Music BG & SFX vv
+
+const backgroundMusix = () => {
+    const audio = document.getElementById('bgmusic');
+    audio.volume = .1;
+    audio.play()
+}
+backgroundMusix()
+
+playerPicks.forEach(pick => {
+    const sfxSounds = document.getElementById("sfx");
+    pick.addEventListener("click", (event) => {
+        sfxSounds.volume = 1;
+        sfxSounds.play()
+    })
 })
+
 
 // vvvvvv Inventory Modal Code vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 const modal = document.querySelector("#inventoryModal");
